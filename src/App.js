@@ -7,7 +7,7 @@ function App() {
       <div className='cover-page'></div>
       <div className='page1'>  
         <div className='content-box1'>
-          <h1>ВЫЕЗДНОЙ БАР</h1>
+          <h1>ВЫЕЗДНОЙ БАР 1</h1>
           <h2>ПРИЕДЕМ НА ВАШЕ МЕРОПРИЯТИЕ <br/> в москве и области</h2>
           <div className='buttons'>
           <button className='button-bar'>ЗАКАЗАТЬ БАР</button>
