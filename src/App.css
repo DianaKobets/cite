@@ -160,15 +160,15 @@
 body{  
     width: 100%;
     background: #0B0718;
+    overflow-x: hidden !important;
   }
   .cover-page{
     width: 55%;
     height: 140px;
   }
 .page1{
-    background-image: url(C:/Users/diana/new_site/cite/src/imgpage1.png);
+    background-image: url('../src/img/imgpage1.png');
     background-size: 100%;
-    height: 1340px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -176,14 +176,13 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
-}
+  }
 .content-box1{
     margin: 100px 220px 400px 300px;
     align-self: flex-end;
     color: #E5E5E5;
     display: flex;
     flex-direction: column;
-
 }
 .content-box1 h1{
     font-family: Archive;
@@ -230,26 +229,108 @@ body{
 .button-call:hover{
   color: rgb(172, 172, 172);
 }
-.content-box2{
-  background-color: #080B26;  
-  display: flex;
-  flex-direction: column;
+.page2{
   width: 100%;
-  align-items: center;
+  background-color: #080B26;
+  margin-top: -140px;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
 }
-.content-box2 h1 {
+
+.content-boxes2{
+  background-color: #080B26;  
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+}
+.content-boxes2 h1 {
   color: #B0BDE5;
   font-family: Russo One;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
 }
-.content-box2 h2{
+.content-boxes2 h2{
   color: white;
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 600;
   display: flex;
-  flex-wrap: wrap;
-
+}
+.content-box2-title h1{
+  line-height: 25px;
+  font-family: Montserrat;
+  background-color: #080B26;  
+  color: #B0BDE5;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content-box2 img{
+    width: 100%;
+    
+}
+.text-price{
+ color: white;
+ display: flex;
+ flex-direction: row;
+}
+.price{
+padding-left: 5px;
+padding-right: 5px;
+font-weight: bold;
+}
+.content-box2-text{
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-size: 13px;
+  font-style: 100;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 20px;
+}
+.content-box2-button{
+  width: 170px;
+  height: 40px;
+  font-size: 12px;
+  font-family: Montserrat;
+  cursor: pointer;
+  background: transparent;
+  color: #E5E5E5;
+  border-style: 1px;
+  border-color: #E5E5E5;
+  margin-top: 50px;
+  display:block;
+  margin: auto;
+  margin-top: 60px;
+}
+.content-box3{
+  margin-top: -80px;
+  background-color: #0B0718;
+}
+.content-box3-header{
+  color: #B0BDE5;
+  font-family: 'Russo One';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+.porfolio-cards {
+  margin-top: 160px;
+  width: 40%;
+  line-height: 200px;
+}
+.cards-row1{
+  display: flex;
+  flex-direction: row;
+}
+.cards-row2{
+  display: flex;
+  flex-direction: row;
 }
