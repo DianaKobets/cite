@@ -1,0 +1,143 @@
+.mobile-navbar-container {
+    height: 100px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+.mobile-navbar-container span {
+    text-transform: none;
+    opacity: 1;
+    font-weight: 300;
+    font-size: 12px;
+}
+.mobile-navbar-container input + label {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: 20px;
+    width: 15px;
+    z-index: 9999999;
+  }
+  .mobile-navbar-container input + label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    right: 0px;
+    display: block;
+    background: white;
+    transition: 0.5s;
+  }
+  .mobile-navbar-container input + label span:first-child {
+    top: 3px;
+  }
+  .mobile-navbar-container input + label span:last-child {
+    top: 16px;
+  }
+  .mobile-navbar-container label:hover {
+    cursor: pointer;
+  }
+  .mobile-navbar-container input:checked + label span {
+    opacity: 0;
+    top: 50%;
+  }
+  .mobile-navbar-container input:checked + label span:first-child {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+  .mobile-navbar-container input:checked + label span:last-child {
+    opacity: 1;
+    transform: rotate(-405deg);
+  }
+  .mobile-navbar-container input ~ nav {
+    background: rgba(11, 7, 24, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+  
+  }
+  .mobile-navbar-container input ~ nav > ul {
+    text-align: left;
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    padding: 0;
+    right: 5%;
+    left: 5%;
+  }
+  .mobile-navbar-container input ~ nav > ul > li {
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+    
+  }
+  .mobile-navbar-container input ~ nav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: Bebas Neue;
+    display: block;
+    padding: 10px;
+    font-size: 28px;
+    
+  }
+  .mobile-navbar-container input:checked ~ nav {
+    height: 80%;
+    transition-delay: 0s;
+    display: flex;
+  }
+  .mobile-navbar-container input:checked ~ nav > ul > li {
+    opacity: 1;
+    transition-delay: 0.5s;
+    border-top: 1px solid white;
+  }
+ul {
+    list-style-type: none;
+}
+.logo-mobile {
+  z-index: 9999999;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.tg-mobile {
+  z-index: 9999999;
+  height: 38px;
+  margin-top: 33px;
+  margin-left: 25px;
+
+}
+#vk-mobile {
+  margin-left: 45px;
+}
+.mnavbar-header {
+  font-family: Russo One;
+  display: flex;
+  font-weight: 300;
+  font-size: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-weight: 400;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+.mnavbar-header span {
+  font-size: 10px;
+  font-weight: 300;
+}
+nav img {
+  height: 85px;
+  top: 0px;
+}
