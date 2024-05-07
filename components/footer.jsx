@@ -22,9 +22,6 @@ export default function Footer() {
           </div>
         </div>
         <div className='footer-3'>
-          <div className='footer-3-logo'>
-            <img src={websec}></img>
-          </div>
           <div className='footer-3-websec'>
             <h1 className='websec-h1'>Разработано <span>skidiko</span></h1>
           </div>
